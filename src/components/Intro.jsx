@@ -1,4 +1,5 @@
 import { useEffect, useState } from "react";
+import crest from "../assets/crest.svg";
 
 export default function Intro({ onDone }) {
   const [phase, setPhase] = useState(0); // 0 crest sweep, 1 hold, 2 exit
@@ -21,7 +22,7 @@ export default function Intro({ onDone }) {
         </div>
       </div>
       <div className="intro-grid" />
-      <img className="intro-crest" src="/img/crest.svg" alt="Эмблема Манчестер Юнайтед" draggable={false} />
+      <img className="intro-crest" src={crest} alt="Эмблема Манчестер Юнайтед" draggable={false} />
       <div className="intro-word">Манчестер Юнайтед</div>
       <div className="intro-sub">1878 · Легенды на поле</div>
     </div>

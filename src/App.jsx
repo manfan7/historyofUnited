@@ -6,6 +6,7 @@ import Sidebar from "./components/Sidebar";
 import DragLayer from "./components/DragLayer";
 import Intro from "./components/Intro";
 import Celebration from "./components/Celebration";
+import stadium from "./assets/oldtrafford.jpg";
 
 const STORE_KEY = "mu-lineup-v1";
 const DRAG_THRESHOLD = 6;
@@ -192,7 +193,7 @@ export default function App() {
       <header className="topbar">
         <div className="brand">
           <div className="brand-stadium" title="Олд Траффорд">
-            <img src="/img/oldtrafford.jpg" alt="Олд Траффорд" draggable={false} />
+            <img src={stadium} alt="Олд Траффорд" draggable={false} />
             <i className="stadium-sheen" />
           </div>
           <div>
